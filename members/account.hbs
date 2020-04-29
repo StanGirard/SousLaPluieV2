@@ -6,18 +6,18 @@
 
     {{!-- Logged in, paying member: Show account info --}}
     <div class="account-box">
-        <h2 class="account-box-title u-fontSizeLarger u-marginBottom30">Nice, you're a subscriber!</h2>
-        <p class="u-fontSizeBase">Hey! <strong>{{@member.email}}</strong> has an active {{@site.title}} account with access to all areas. You're all set, but if you need any help, get in touch with us and we'd be happy to help.</p>
+        <h2 class="account-box-title u-fontSizeLarger u-marginBottom30">Houra ! Vous êtes déjà abonné !</h2>
+        <p class="u-fontSizeBase">Salut ! <strong>{{@member.email}}</strong> a un abonnement donnant accès à tout le contenu du site. En plus vous nous aidez à maintenir Sous La Pluie gratuit et sans pub ! Merci à vous ! </p>
     </div>
 
 {{else if @member}}
 
     {{!-- Logged in, not paying: Link to checkout --}}
     <div class="account-box">
-        <h1 class="account-box-title u-fontSizeLarger u-marginBottom30">Currently, you're not a subscriber</h1>
-        <p class="u-marginBottom30 u-fontSizeBase">Hey there! <strong>{{@member.email}}</strong> is subscribed to free updates from {{@site.title}}, but doesn't have a paid subscription to unlock full access.</p>
+        <h1 class="account-box-title u-fontSizeLarger u-marginBottom30">Vous n'êtes pas abonné pour le moment !</h1>
+        <p class="u-marginBottom30 u-fontSizeBase">Salut <strong>{{@member.email}}</strong> ! Vous êtes actuellement seulement membre de {{@site.title}}. Si vous souhaitez nous aider et rejoindre notre communauté de supporteurs alors n'hésitez pas à vous abonner.</p>
         <div class="authbox-signup">
-            <a class="button button--large button--filled" href="{{@site.url}}/membership/">Subscribe now</a>
+            <a class="button button--large button--filled" href="{{@site.url}}/membership/">Devenez supporteur</a>
         </div>
     </div>
 

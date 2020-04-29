@@ -17,7 +17,7 @@
         <ul class="header-left u-flex0 u-flex u-flexEnd u-unstyled">
             {{!-- Social Media --}}
             <li class="dropdown u-hide-before-lg u-relative">
-                <div class="hla u-fontSizeSmaller">Follow <svg class="icon icon--s top2"><use xlink:href="#icon-arrow"></use></svg></div>
+                <div class="hla u-fontSizeSmaller">Nous suivre<svg class="icon icon--s top2"><use xlink:href="#icon-arrow"></use></svg></div>
 
                 <div class="header-dropdown-menu drop-content u-absolute">
                     {{!-- Social Media --}}
@@ -29,7 +29,7 @@
                     {{!-- Members --}}
                     {{#if @labs.members}}
                     <div class="u-textAlignCenter u-marginBottom30">
-                        <h5 class="u-fontSize26 u-fontWeightMedium u-marginBottom15">{{t "Subscribe to"}} {{@site.title}}</h5>
+                        <h5 class="u-fontSize26 u-fontWeightMedium u-marginBottom15">Devenez membre de {{@site.title}}</h5>
                         <div class="u-fontSize15 u-marginBottom20">{{t "Get the latest posts delivered right to your inbox"}}</div>
 
                         <form class="swf" data-members-form="subscribe">
@@ -44,7 +44,7 @@
                                     required
                                 />
                                 <button id="header-subscribe-btn" class="button button button--large button--filled u-flex0" type="submit">
-                                    <span class="button-text">{{t "Subscribe"}}</span>
+                                    <span class="button-text">S'inscrire</span>
                                     {{> "icons/loader"}}
                                 </button>
                             </div>
